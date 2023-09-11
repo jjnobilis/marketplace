@@ -10,6 +10,7 @@ import '@fontsource-variable/spline-sans';
 
 const proTheme = extendTheme(theme)
 const extendedConfig = {
+  initialColorMode: 'dark',
   colors: { ...proTheme.colors, brand: proTheme.colors.teal },
 }
 const myTheme = extendTheme(extendedConfig, proTheme)
