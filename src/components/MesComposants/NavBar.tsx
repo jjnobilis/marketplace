@@ -1,19 +1,12 @@
 import {
   Box,
-  FormLabel,
   Grid,
   GridItem,
   HStack,
-  Icon,
   IconButton,
-  Image,
-  Switch,
   Text,
 } from "@chakra-ui/react";
-import logo from "../assets/Nobilishop.png";
 import SearchInput from "./SearchInput";
-import { FaAccessibleIcon, FaMoon, FaSuperpowers } from "react-icons/fa";
-import { FiCalendar, FiImage } from "react-icons/fi";
 import LangueSelector from "./LangueSelector";
 import RegisterButton from "./RegisterButton";
 import VignettePanier from "./VignettePanier";

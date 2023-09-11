@@ -5,7 +5,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import { useRef } from "react";
-import { BsCaretDownFill, BsSearch, BsSpellcheck } from "react-icons/bs";
+import { BsCaretDownFill, BsSearch } from "react-icons/bs";
 
 interface Props {
   onSearch: (searchText: string) => void;

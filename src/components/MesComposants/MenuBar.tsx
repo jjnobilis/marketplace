@@ -1,15 +1,11 @@
 import {
   HStack,
-  IconButton,
-  CheckboxIcon,
-  MenuIcon,
   MenuButton,
   Menu,
   MenuList,
   MenuItem,
   Button,
 } from "@chakra-ui/react";
-import React from "react";
 
 const MenuBar = () => {
   return (

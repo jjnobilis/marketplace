@@ -1,16 +1,7 @@
-import { Badge, Box, Button, Flex, Toast } from "@chakra-ui/react";
-import React from "react";
-import {
-  FaShoppingBag,
-  FaShoppingBasket,
-  FaShoppingCart,
-} from "react-icons/fa";
+import { Badge, Button, Flex } from "@chakra-ui/react";
+import { FaShoppingCart } from "react-icons/fa";
 
-interface Props {
-  cartItemsCount?: Number;
-}
-
-const VignettePanier = ({ cartItemsCount = 0 }: Props) => {
+const VignettePanier = () => {
   return (
     <Flex as={Button}>
       <Badge pos="absolute" top={"20%"} left={"45%"}>

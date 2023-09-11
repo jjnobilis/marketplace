@@ -1,8 +1,8 @@
 import { Container, Flex, Stack } from "@chakra-ui/react";
 import { Navbar } from "./components/Navbar";
-import { Sidebar } from "./components/SideBar";
 import { Main } from "./components/Main";
 import { Footer } from "./components/Footer";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (

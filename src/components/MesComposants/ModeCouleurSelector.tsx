@@ -1,15 +1,8 @@
-import {
-  Box,
-  Button,
-  Icon,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
-import React from "react";
+import { Box, Button, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const ModeCouleurSelector = () => {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   const iconColorMode = useColorModeValue("FaMoon", "FaSun");
 
   return (

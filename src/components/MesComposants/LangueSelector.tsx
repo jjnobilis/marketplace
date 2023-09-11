@@ -1,9 +1,5 @@
-import React from 'react'
-
 const LangueSelector = () => {
-  return (
-    <div>LangueSelector</div>
-  )
-}
+  return <div>LangueSelector</div>;
+};
 
-export default LangueSelector
+export default LangueSelector;
