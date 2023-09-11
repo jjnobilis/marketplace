@@ -1,7 +1,27 @@
-import GeneralLayout from "./components/template/GeneralLayout";
+import { Container, Flex, Stack } from "@chakra-ui/react";
+import { Navbar } from "./components/Navbar";
+import { Sidebar } from "./components/SideBar";
+import { Main } from "./components/Main";
+import { Footer } from "./components/Footer";
 
 function App() {
-  return <GeneralLayout />;
+  return (
+    <Flex direction="column" flex="1">
+      <Navbar />
+      <Container py="16" flex="1">
+        <Stack
+          direction={{ base: "column", lg: "row" }}
+          spacing={{ base: "12", lg: "16" }}
+          flex="1"
+        >
+          <Sidebar maxW={{ lg: "36" }} />
+          <Main />
+          <Sidebar maxW={{ lg: "72" }} />
+        </Stack>
+      </Container>
+      <Footer />
+    </Flex>
+  );
 }
 
 export default App;
