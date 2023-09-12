@@ -41,10 +41,11 @@ const NavbarExplicit = () => {
                 spacing="8"
                 display={{ base: "none", lg: "flex" }}
               >
-                <Button>Dashbaord</Button>
-                <Button>Analysis</Button>
-                <DocumentPopover />
-                <Button>History</Button>
+                <Button>Deals du jour</Button>
+                <Button>Service Client</Button>
+                <Button>Cartes Cadeaux</Button>
+                <Button>Vendre</Button>
+                {/* <DocumentPopover /> */}
               </ButtonGroup>
             </HStack>
             <HStack spacing={{ base: "2", md: "4" }}>
@@ -55,13 +56,28 @@ const NavbarExplicit = () => {
                 <InputLeftElement>
                   <Icon as={FiSearch} color="fg.accent.muted" fontSize="lg" />
                 </InputLeftElement>
-                <Input placeholder="Search" variant="filled.accent" />
+                <Input
+                  placeholder="Que désirez-vous ?"
+                  variant="filled.accent"
+                />
               </InputGroup>
               <ButtonGroup variant="tertiary.accent" spacing="1">
                 <IconButton
                   icon={<FiSearch />}
                   aria-label="Serach"
                   display={{ base: "flex", lg: "none" }}
+                  isRound
+                />
+                <IconButton
+                  icon={<FiSearch />}
+                  aria-label="Serach"
+                  // display={{ base: "flex", lg: "none" }}
+                  isRound
+                />
+                <IconButton
+                  icon={<FiSearch />}
+                  aria-label="Serach"
+                  // display={{ base: "flex", lg: "none" }}
                   isRound
                 />
                 <IconButton
