@@ -21,7 +21,7 @@ const NavbarExplicit = () => {
   return (
     <Box as="section">
       <Box
-        borderBottomWidth="1px"
+        borderBottomWidth="0px"
         bg="bg.accent.default"
         position="relative"
         zIndex="tooltip"
@@ -29,7 +29,7 @@ const NavbarExplicit = () => {
         <Container py="4">
           <HStack justify="space-between" spacing="8">
             <HStack spacing="10">
-              <HStack spacing="3">
+              <HStack spacing="1" alignSelf="flex-start">
                 <MobileDrawer />
                 <Image src={logo} boxSize="60px" />
                 {/* <Logo /> */}

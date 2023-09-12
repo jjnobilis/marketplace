@@ -32,8 +32,8 @@ const SidebarExplicit = () => {
       <Stack
         flex="1"
         maxW={{ base: "full", sm: "xs" }}
-        py={{ base: "6", sm: "8" }}
-        px={{ base: "4", sm: "6" }}
+        py={{ base: "2", sm: "4" }}
+        px={{ base: "0", sm: "2" }}
         bg="bg.accent.default"
         color="fg.accent.default"
         borderRightWidth="1px"

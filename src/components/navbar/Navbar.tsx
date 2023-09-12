@@ -14,6 +14,7 @@ export const Navbar = () => {
       zIndex="docked"
       bg="bg.accent.default"
       color="fg.accent.default"
+      
       {...rootProps}
     >
       <Container>
