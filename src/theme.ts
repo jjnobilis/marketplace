@@ -10,7 +10,7 @@ const config: ThemeConfig = {
 
 const proTheme = extendTheme(theme)
 const extenstion = {
-  colors: { ...proTheme.colors, brand: proTheme.colors.gray },
+  colors: { ...proTheme.colors, brand: proTheme.colors.black },
 }
 const myTheme = extendTheme(extenstion, proTheme, config)
 
