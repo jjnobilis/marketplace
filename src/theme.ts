@@ -1,18 +1,18 @@
-import {  extendTheme } from "@chakra-ui/react";
+import {  ThemeConfig, extendTheme } from "@chakra-ui/react";
 import { theme } from '@chakra-ui/pro-theme';
-import {  } from '@chakra-ui/react';
 import '@fontsource-variable/open-sans';
 import '@fontsource-variable/spline-sans';
 
-// const config: ThemeConfig = {
-//     initialColorMode: 'dark'
-// };
+const config: ThemeConfig = {
+  initialColorMode: 'light', // 'dark' | 'light'
+  useSystemColorMode: false,
+}
 
 const proTheme = extendTheme(theme)
-const extendedConfig = {
-  initialColorMode: 'dark',
+const extenstion = {
   colors: { ...proTheme.colors, brand: proTheme.colors.teal },
 }
-const myTheme = extendTheme(extendedConfig, proTheme)
+const myTheme = extendTheme(extenstion, proTheme, config)
+
 
 export default myTheme;

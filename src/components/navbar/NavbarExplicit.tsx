@@ -7,18 +7,20 @@ import {
   HStack,
   Icon,
   IconButton,
+  Image,
   Input,
   InputGroup,
   InputLeftElement,
 } from "@chakra-ui/react";
 import { FiBell, FiSearch } from "react-icons/fi";
 import { DocumentPopover } from "./DocumentPopover";
-import { Logo } from "./Logo";
+import logo from "../../assets/logo.png";
 import { MobileDrawer } from "./MobileDrawer";
+import { Logo } from "./Logo";
 
 const NavbarExplicit = () => {
   return (
-    <Box as="section" minH={19}>
+    <Box as="section" >
       <Box
         borderBottomWidth="1px"
         bg="bg.accent.default"
@@ -30,7 +32,8 @@ const NavbarExplicit = () => {
             <HStack spacing="10">
               <HStack spacing="3">
                 <MobileDrawer />
-                <Logo />
+                <Image src={logo} boxSize="60px" />
+                {/* <Logo /> */}
               </HStack>
               <ButtonGroup
                 size="lg"
