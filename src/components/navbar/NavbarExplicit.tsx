@@ -45,7 +45,7 @@ const NavbarExplicit = () => {
                 <Button>Service Client</Button>
                 <Button>Cartes Cadeaux</Button>
                 <Button>Vendre</Button>
-                {/* <DocumentPopover /> */}
+                <DocumentPopover />
               </ButtonGroup>
             </HStack>
             <HStack spacing={{ base: "2", md: "4" }}>
