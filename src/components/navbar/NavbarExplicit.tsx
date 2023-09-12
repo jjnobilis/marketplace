@@ -16,11 +16,10 @@ import { FiBell, FiSearch } from "react-icons/fi";
 import { DocumentPopover } from "./DocumentPopover";
 import logo from "../../assets/logo.png";
 import { MobileDrawer } from "./MobileDrawer";
-import { Logo } from "./Logo";
 
 const NavbarExplicit = () => {
   return (
-    <Box as="section" >
+    <Box as="section">
       <Box
         borderBottomWidth="1px"
         bg="bg.accent.default"
