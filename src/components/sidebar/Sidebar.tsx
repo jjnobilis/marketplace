@@ -1,5 +1,5 @@
-import { Box, BoxProps } from '@chakra-ui/react'
-import { Placeholder } from './Placeholder'
+import { Box, BoxProps } from "@chakra-ui/react";
+import SidebarExplicit from "./SidebarExplicit";
 
 export const Sidebar = (props: BoxProps) => {
   return (
@@ -9,11 +9,11 @@ export const Sidebar = (props: BoxProps) => {
       bg="bg.accent.default"
       width="full"
       alignSelf="start"
-      position={{ base: 'unset', lg: 'sticky' }}
+      position={{ base: "unset", lg: "sticky" }}
       top="36"
       {...props}
     >
-      <Placeholder minH="xs">Sidebar</Placeholder>
+      <SidebarExplicit></SidebarExplicit>
     </Box>
-  )
-}
+  );
+};

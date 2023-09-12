@@ -5,12 +5,12 @@ import '@fontsource-variable/spline-sans';
 
 const config: ThemeConfig = {
   initialColorMode: 'light', // 'dark' | 'light'
-  useSystemColorMode: false,
+  useSystemColorMode: true,
 }
 
 const proTheme = extendTheme(theme)
 const extenstion = {
-  colors: { ...proTheme.colors, brand: proTheme.colors.teal },
+  colors: { ...proTheme.colors, brand: proTheme.colors.gray },
 }
 const myTheme = extendTheme(extenstion, proTheme, config)
 

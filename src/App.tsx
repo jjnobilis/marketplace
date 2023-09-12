@@ -1,8 +1,8 @@
 import { Container, Flex, Stack } from "@chakra-ui/react";
 import { Navbar } from "./components/navbar/Navbar";
-import { Main } from "./components/Main";
-import { Footer } from "./components/Footer";
-import { Sidebar } from "./components/Sidebar";
+import { Main } from "./components/main/Main";
+import { Footer } from "./components/footer/Footer";
+import { Sidebar } from "./components/sidebar/Sidebar";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         >
           <Sidebar maxW={{ lg: "36" }} />
           <Main />
-          <Sidebar maxW={{ lg: "72" }} />
+          {/* <Sidebar maxW={{ lg: "72" }} /> */}
         </Stack>
       </Container>
       <Footer />
