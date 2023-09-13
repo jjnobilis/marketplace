@@ -1,5 +1,5 @@
 import {
-  Avatar,
+  // Avatar,
   Box,
   Button,
   ButtonGroup,
@@ -14,7 +14,7 @@ import {
   InputLeftElement,
   Spacer,
 } from "@chakra-ui/react";
-import { FiBell, FiMenu, FiSearch } from "react-icons/fi";
+import {  FiMenu, FiSearch } from "react-icons/fi";
 // import { DocumentPopover } from "./DocumentPopover";
 import logo from "../../assets/logo.png";
 import { MobileDrawer } from "./MobileDrawer";
