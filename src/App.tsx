@@ -14,7 +14,10 @@ function App() {
           spacing={{ base: "4", lg: "8" }}
           flex="1"
         >
-          <Sidebar maxW={{ lg: "36" }} />
+          <Sidebar
+            maxW={{ lg: "36" }}
+            display={{ base: "inline-flex", lg: "none" }}
+          />
           <Main />
           {/* <Sidebar maxW={{ lg: "72" }} /> */}
         </Stack>

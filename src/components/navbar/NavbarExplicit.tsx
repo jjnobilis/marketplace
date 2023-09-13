@@ -3,7 +3,8 @@ import {
   Box,
   Button,
   ButtonGroup,
-  Container,
+  // Container,
+  Flex,
   HStack,
   Icon,
   IconButton,
@@ -11,85 +12,78 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
+  Spacer,
 } from "@chakra-ui/react";
-import { FiBell, FiSearch } from "react-icons/fi";
-import { DocumentPopover } from "./DocumentPopover";
+import { FiBell, FiMenu, FiSearch } from "react-icons/fi";
+// import { DocumentPopover } from "./DocumentPopover";
 import logo from "../../assets/logo.png";
 import { MobileDrawer } from "./MobileDrawer";
+import LangueSelector from "./LangueSelector";
+import SingInNavBarItem from "./SingInNavBarItem";
+import ReturnAndOrder from "./ReturnAndOrder";
+import ColorModeSelector from "./ColorModeSelector";
+// import { Logo } from "./Logo";
 
 const NavbarExplicit = () => {
   return (
     <Box as="section">
       <Box
-        borderBottomWidth="0px"
+        // borderBottomWidth="0px"
         bg="bg.accent.default"
         position="relative"
         zIndex="tooltip"
       >
-        <Container py="4">
-          <HStack justify="space-between" spacing="8">
-            <HStack spacing="10">
-              <HStack spacing="1" alignSelf="flex-start">
-                <MobileDrawer />
-                <Image src={logo} boxSize="60px" />
-                {/* <Logo /> */}
-              </HStack>
-              <ButtonGroup
-                size="lg"
-                variant="text.accent"
-                colorScheme="gray"
-                spacing="8"
-                display={{ base: "none", lg: "flex" }}
-              >
-                <Button>Deals du jour</Button>
-                <Button>Service Client</Button>
-                <Button>Cartes Cadeaux</Button>
-                <Button>Vendre</Button>
-                <DocumentPopover />
-              </ButtonGroup>
-            </HStack>
+        <Flex py="4">
+          <Box px="2">
+            <MobileDrawer />
+            <Image
+              display={{ base: "none", lg: "flex" }}
+              src={logo}
+              boxSize="40px"
+            />
+            {/* <Logo /> */}
+          </Box>
+          <Box flex="1">
+            <InputGroup
+            // maxW="2xs"
+            // display={{ base: "none", md: "inline-flex" }}
+            >
+              <InputLeftElement>
+                <Icon as={FiSearch} color="fg.accent.muted" fontSize="lg" />
+              </InputLeftElement>
+              <Input placeholder="Que désirez-vous ?" variant="filled.accent" />
+            </InputGroup>
+          </Box>
+          <Box pl={2}>
             <HStack spacing={{ base: "2", md: "4" }}>
-              <InputGroup
-                maxW="2xs"
-                display={{ base: "none", md: "inline-flex" }}
-              >
-                <InputLeftElement>
-                  <Icon as={FiSearch} color="fg.accent.muted" fontSize="lg" />
-                </InputLeftElement>
-                <Input
-                  placeholder="Que désirez-vous ?"
-                  variant="filled.accent"
-                />
-              </InputGroup>
-              <ButtonGroup variant="tertiary.accent" spacing="1">
-                <IconButton
-                  icon={<FiSearch />}
-                  aria-label="Serach"
-                  display={{ base: "flex", lg: "none" }}
-                  isRound
-                />
-                <IconButton
-                  icon={<FiSearch />}
-                  aria-label="Serach"
-                  // display={{ base: "flex", lg: "none" }}
-                  isRound
-                />
-                <IconButton
-                  icon={<FiSearch />}
-                  aria-label="Serach"
-                  // display={{ base: "flex", lg: "none" }}
-                  isRound
-                />
-                <IconButton
-                  icon={<FiBell />}
-                  aria-label="Show notification"
-                  isRound
-                />
-              </ButtonGroup>
-              <Avatar boxSize="10" src="https://i.pravatar.cc/300" />
+              <LangueSelector></LangueSelector>
+              <SingInNavBarItem></SingInNavBarItem>
+              <ReturnAndOrder></ReturnAndOrder>
+              <ColorModeSelector></ColorModeSelector>
+              {/*<BadgePanier></BadgePanier> 
+              <Avatar boxSize="10" src="https://i.pravatar.cc/300" />*/}
             </HStack>
-          </HStack>
-        </Container>
+          </Box>
+        </Flex>
+        <Flex>
+          {" "}
+          <ButtonGroup
+            size="lg"
+            variant="text.accent"
+            colorScheme="gray"
+            spacing="4"
+            pb="2"
+            display={{ base: "none", lg: "flex" }}
+          >
+            <IconButton icon={<FiMenu />} aria-label="Menu" isRound />
+            <Button>Deals du jour</Button>
+            <Button>Service Client</Button>
+            <Button>Cartes Cadeaux</Button>
+            <Button>Vendre</Button>
+            {/* <DocumentPopover /> */}
+          </ButtonGroup>
+          <Spacer />
+        </Flex>
       </Box>
     </Box>
   );
